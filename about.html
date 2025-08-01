@@ -5,10 +5,13 @@
     <title>🍁About </title>
 </head>
 <style>
-    body{
+   
+   body{
+    
         padding:0;
         margin: 0;
         background-color: #393f4d;
+        cursor: url('ig.png') ,auto;
     }
      header {
             position: fixed;
@@ -18,6 +21,7 @@
             background-color: #393f4d;
             border-bottom: 2px solid rgb(209, 225, 240);
             border-top: 2px solid rgb(209, 225, 240);
+            z-index: 3;
 
 
         }
@@ -78,6 +82,7 @@
             display: inline;
         }
         footer{
+            position: sticky;
             width: 100%;
             background-color: #d1bfa7;
             display: flex;
@@ -85,6 +90,75 @@
             align-items: center;
             justify-content: space-between;
         }
+        #parent{
+           
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 70vh;
+            position: sticky;
+            
+        }
+        #raja:hover{
+            z-index: 2;
+            transform: rotate(360deg);
+        }
+        #dev:hover{
+            z-index: 2;
+            transform: rotate(360deg);
+        }
+        #cat:hover{
+            z-index: 2;
+            transform: rotate(360deg);
+        }
+        #dev{
+            left: -3%;
+           position: relative;
+           transform: rotate(45deg);
+           transition: transform 0.5s;
+
+        }
+         #raja{
+            left: 10%;
+          position: relative;
+          transform: rotate(45deg);
+          transition: transform 0.5s;
+        }
+     #cat{
+         left: -15%;
+         position: relative;
+         transform: rotate(45deg);
+           transition: transform 0.5s;
+        }
+        img{
+            border-radius: 20px;
+        }
+        #pos{
+            background-color: aliceblue;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: .125rem solid black;
+            bottom: -20px;
+            padding: 0 10px 0 10px;
+            border-radius: 20px;
+            left: 70px;
+        }
+         #pot{
+            background-color: aliceblue;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: .125rem solid black;
+            bottom: -20px;
+            padding: 0 10px 0 10px;
+            border-radius: 20px;
+            left: 100px;
+        }
+        
       
 </style>
 <body>
@@ -109,17 +183,22 @@
             color: #d1bfa7; padding-left:  20px;font-size: 20px;">
 “Unity in Diversity” is not just a slogan; it is the foundation of India’s strength. It inspires Indians to be open-minded, tolerant, and resilient. This spirit is woven into the places we visit, the festivals we celebrate, and the way we live every day. Through understanding and celebrating differences, India stands tall as a shining example of harmony for the world.</p>
     </div>
-        <div id="img1">
-            <img style="border-radius: 50%;" src="raja.jpg" alt="" width="400px" height="400px">
-            <img style="border-radius: 50%;" src="dev1.jpg" alt="" width="400px" height="400px" >
+        <div id="parent">
+
+            <div id="raja"> 
+                <img src="raja.jpg" alt="" height="400" width="300" >
+                <div id="pos"><h3>Raja Singh Lodhi</h3></div>
+            </div>
+           
+            <div id="dev">
+                <img src="dev1.jpg" alt="" height="400" width="300" >
+                <div id="pos"><h3>Devendra Lodhi</h3></div>
+            </div>
+            <div id="cat">
+                <img src="carto.webp" alt="" height="400" width="300">
+                 <div id="pot"><h3>Touch Me!</h3></div>
+            </div>
             
-        </div>
-    </div>
-    <div>
-        <div id="h1">
-            <h1>Raja singh lodhi</h1>
-            <h1>Devendra lodhi</h1>
-        </div>
     </div>
     <footer>
        <div style="display: flex;padding-left: 50px;"> &copy;2025</div> 
